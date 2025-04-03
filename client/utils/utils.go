@@ -45,9 +45,20 @@ func LeerConsola() {
 func GenerarYEnviarPaquete() {
 	paquete := Paquete{}
 	// Leemos y cargamos el paquete
+	log.Println("Ingrese el mensaje a enviar y presione ENTER:")
+	var mensaje string
+	fmt.Scanln(&mensaje)
 
-	log.Printf("paqute a enviar: %+v", paquete)
-	// Enviamos el paqute
+	// Agregamos el mensaje al paquete
+	paquete.Valores = append(paquete.Valores, mensaje)
+
+	// Log para verificar el contenido del paquete
+	log.Printf("paquete a enviar: %+v", paquete)
+
+	// Enviamos el paquete
+	EnviarPaquete(globals.ClientConfig.Ip, globals.ClientConfig.Puerto, paquete)
+	log.Printf("paquete enviado!")
+
 }
 
 func EnviarMensaje(ip string, puerto int, mensajeTxt string) {
