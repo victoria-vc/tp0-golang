@@ -1,4 +1,4 @@
-# Sistemas Operativos - TP0
+# Sistemas Operativos - TP0 - Go
 
 ## ¿De qué trata?
 
@@ -10,5 +10,5 @@ Es un ejercicio corto y sirve como base para empezar el TP cuatrimestral.
 
 Podés encontrar la consigna en el siguiente [link].
 
-[link]: https://faq.utnso.com.ar/tp0-enunciado
+[link]: https://golang.utnso.com.ar/primeros-pasos/tp0
 
