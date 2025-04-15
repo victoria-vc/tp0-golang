@@ -17,6 +17,7 @@ func main() {
 	if globals.ClientConfig == nil {
 		log.Fatalf("No se cargo la configuración")
 	}
+	
 	// loggeamos el valor de la config
 	log.Println(globals.ClientConfig.Mensaje)
 
